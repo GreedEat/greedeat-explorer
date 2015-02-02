@@ -1,0 +1,77 @@
+// Width variables (appears count calculates by raw css)
+@width2: 300px; // Appears 2 times
+
+// Height variables (appears count calculates by raw css)
+@height2: 30px; // Appears 2 times
+
+#header {
+	height: 301px;
+	margin-top: 0 !important;
+}
+#header.slide-down {
+	#navigation {
+		top: 0;
+	}
+}
+body {
+	background: #f4f4f4;
+	font-family: 'Noto Serif';
+}
+h1, h2, h3, h4, h5, h6, #logo h1, .post-title, .sub-title, .pagination-counter, #footer .back-top, #mixer .infobox strong, .dropcap, .bw-not-found, #peliegro-search .search-field, #peliegro-search .search-submit, .mfp-counter .js-unit, .mfp-counter .js-gallery-slides-total, .post-blocks.blocks-5 .block-info h3, #mixer .item-featured blockquote  {
+	font-family: 'Roboto Slab';
+}
+.widget {
+	.widget-title {
+		&:after {
+			background: transparent url('http://peliegro.bwdesk.com/wp-content/uploads/2014/12/widget-wave.png') no-repeat center center;
+			bottom: 15px;
+			content: '';
+			height: @height2;
+			left: 50%;
+			margin-left: -150px;
+			position: absolute;
+			width: @width2;
+		}
+	}
+}
+#footer {
+	.widget {
+		.widget-title {
+			&:after {
+				background: transparent url('http://peliegro.bwdesk.com/wp-content/uploads/2014/12/widget-footer-titles.png') no-repeat center center;
+				bottom: 15px;
+				content: '';
+				height: @height2;
+				left: 0;
+				position: absolute;
+				width: @width2;
+			}
+		}
+	}
+}
+#logo {
+	height: 240px;
+}
+#navigation {
+	margin-top: 240px;
+}
+.row {
+	width: 1100px;
+}
+#header.go-sticky {
+	#navigation {
+		-moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08);
+		-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08);
+		border: 0;
+		box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08);
+		left: 50%;
+		margin-left: -549px;
+		max-width: 1098px;
+	}
+}
+.bw-line.line-1 {
+	left: 365.8536px;
+}
+.bw-line.line-2 {
+  left: 731.0408px;
+}
