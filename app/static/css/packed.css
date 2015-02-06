@@ -1,0 +1,134 @@
+.blank {
+  padding: 0px;
+  margin: 0px;
+}
+.row {
+  width: 900px;
+  margin: auto;
+}
+body {
+  background: #f4f4f4;
+  font-family: 'Noto Serif';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#logo h1,
+.post-title,
+.sub-title,
+.pagination-counter,
+#footer .back-top,
+#mixer .infobox strong,
+.dropcap,
+.bw-not-found,
+#peliegro-search .search-field,
+#peliegro-search .search-submit,
+.mfp-counter .js-unit,
+.mfp-counter .js-gallery-slides-total,
+.post-blocks.blocks-5 .block-info h3,
+#mixer .item-featured blockquote {
+  font-family: 'Roboto Slab';
+}
+.anchor {
+  float: left;
+}
+.go-sticky {
+  position: fixed !important;
+  top: 0px;
+  -webkit-transition: top .3s;
+}
+.left {
+  margin-left: 0px !important;
+  border-left: 1px solid #d4d4d4;
+}
+.right {
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  margin-right: 0px !important;
+}
+.center {
+  border-left: 1px solid #d4d4d4;
+  margin-left: 0px !important;
+}
+.layout-left {
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+}
+.layout-right {
+  margin-right: 0px !important;
+  padding-right: 0px !important;
+}
+.layout-center {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+#main-title {
+  width: 900px;
+  height: 335px;
+  background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/t31.0-8/s2048x2048/10582764_404068046431899_8989093308723634232_o.jpg');
+  background-size: contain;
+  vertical-align: bottom;
+}
+#main-title img {
+  width: 170px;
+  border: solid 1px #d4d4d4;
+  border-radius: 5px;
+  float: left;
+}
+#navigation {
+  z-index: 1000;
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #d4d4d4;
+  background-color: #ffffff;
+}
+#navigation #search {
+  margin: auto;
+  text-align: center;
+}
+#content .fb-post {
+  margin: 10px;
+  border: 1px solid #d4d4d4;
+  font-size: small;
+  padding: 10px 20px 20px 20px;
+  background-color: #ffffff;
+  line-height: 25px;
+}
+#content .fb-post .fb-post-content {
+  padding: 20px 20px 0px 20px;
+}
+#content img {
+  max-width: 100%;
+}
+#content img.uploader {
+  border: solid 1px #eeeeee;
+  float: left;
+}
+#sidebar .sidebar-inner {
+  border: 1px solid #d4d4d4;
+  margin: 10px;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.board {
+  background-color: #f4f4f4 !important;
+}
+#inputlg {
+  width: 700px;
+  display: inline-block;
+}
+#footer {
+  clear: both;
+  height: 150px;
+  width: 900px;
+  background-color: #000000;
+}

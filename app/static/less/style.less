@@ -1,77 +1,128 @@
-// Width variables (appears count calculates by raw css)
-@width2: 300px; // Appears 2 times
+@width: 900px;
 
-// Height variables (appears count calculates by raw css)
-@height2: 30px; // Appears 2 times
-
-#header {
-	height: 301px;
-	margin-top: 0 !important;
+.blank{
+  padding: 0px;
+  margin: 0px;
 }
-#header.slide-down {
-	#navigation {
-		top: 0;
-	}
+.row{
+  width: @width;
+  margin: auto;
 }
 body {
-	background: #f4f4f4;
-	font-family: 'Noto Serif';
+  background: #f4f4f4;
+  font-family: 'Noto Serif';
 }
 h1, h2, h3, h4, h5, h6, #logo h1, .post-title, .sub-title, .pagination-counter, #footer .back-top, #mixer .infobox strong, .dropcap, .bw-not-found, #peliegro-search .search-field, #peliegro-search .search-submit, .mfp-counter .js-unit, .mfp-counter .js-gallery-slides-total, .post-blocks.blocks-5 .block-info h3, #mixer .item-featured blockquote  {
-	font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab';
 }
-.widget {
-	.widget-title {
-		&:after {
-			background: transparent url('http://peliegro.bwdesk.com/wp-content/uploads/2014/12/widget-wave.png') no-repeat center center;
-			bottom: 15px;
-			content: '';
-			height: @height2;
-			left: 50%;
-			margin-left: -150px;
-			position: absolute;
-			width: @width2;
-		}
-	}
+
+.anchor{
+  float: left;
 }
-#footer {
-	.widget {
-		.widget-title {
-			&:after {
-				background: transparent url('http://peliegro.bwdesk.com/wp-content/uploads/2014/12/widget-footer-titles.png') no-repeat center center;
-				bottom: 15px;
-				content: '';
-				height: @height2;
-				left: 0;
-				position: absolute;
-				width: @width2;
-			}
-		}
-	}
+.go-sticky{
+  position: fixed !important;
+  top: 0px;
+  -webkit-transition: top .3s;
 }
-#logo {
-	height: 240px;
+.left{
+  margin-left: 0px !important;
+  border-left:1px solid #d4d4d4;
 }
-#navigation {
-	margin-top: 240px;
+.right{
+  border-left:1px solid #d4d4d4;
+  border-right:1px solid #d4d4d4;
+  margin-right: 0px !important;
 }
-.row {
-	width: 1100px;
+.center{
+  border-left:1px solid #d4d4d4;
+  margin-left: 0px !important;
 }
-#header.go-sticky {
-	#navigation {
-		-moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08);
-		-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08);
-		border: 0;
-		box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08);
-		left: 50%;
-		margin-left: -549px;
-		max-width: 1098px;
-	}
+
+.layout-left{
+  margin-left: 0px !important;
+  padding-left: 0px !important;
 }
-.bw-line.line-1 {
-	left: 365.8536px;
+.layout-right{
+  margin-right: 0px !important;
+  padding-right: 0px !important;
 }
-.bw-line.line-2 {
-  left: 731.0408px;
+.layout-center{
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+#main-title{
+  width: 900px;
+  height: 335px;
+  background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/t31.0-8/s2048x2048/10582764_404068046431899_8989093308723634232_o.jpg');
+  background-size: contain;
+  vertical-align: bottom;
+  img{
+    width: 170px;
+    border: solid 1px #d4d4d4;
+    border-radius: 5px;
+    float: left;
+  }
+}
+#navigation{
+  z-index: 1000;
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #d4d4d4;
+  background-color: #ffffff;
+  #search{
+    margin: auto;
+    text-align: center;
+  }
+}
+#content{
+  .fb-post {
+    margin: 10px;
+    border: 1px solid #d4d4d4;
+    font-size: small;
+    padding: 10px 20px 20px 20px;
+    background-color: #ffffff;
+    line-height: 25px;
+
+    .fb-post-content{
+      padding: 20px 20px 0px 20px;
+      }
+    }
+     img {
+      max-width: 100%;
+    }
+    img.uploader{
+      border: solid 1px #eeeeee;
+      float: left;
+    }
+}
+
+#sidebar{
+  .sidebar-inner{
+    border: 1px solid #d4d4d4;
+    margin: 10px;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+}
+#profile{
+
+}
+.board {
+  background-color: #f4f4f4 !important;
+}
+#inputlg{
+  width: 700px;
+  display: inline-block;
+}
+#footer{
+  clear: both;
+  height: 150px;
+  width: @width;
+  background-color: #000000;
 }

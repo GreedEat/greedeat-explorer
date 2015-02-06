@@ -10,6 +10,11 @@ def index():
     return render_template('index.jade')
 
 
+@app.route('/test')
+def index():
+    return render_template('index2.jade')
+
+
 @app.route('/static/<path>')
 def get_static(path):
     return send_from_directory('static', path)

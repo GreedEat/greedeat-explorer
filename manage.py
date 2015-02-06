@@ -8,6 +8,10 @@ from app import Base, create_app, db_session, engine, assets
 
 
 app_ = create_app()
+
+from flask_jsglue import JSGlue
+jsglue = JSGlue(app_)
+
 app_.wsgi_app = ProxyFix(app_.wsgi_app)
 
 manager = Manager(app_)

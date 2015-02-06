@@ -1,15 +1,14 @@
 # -*- coding:utf-8 -*-
-import os
-
 from flask import Flask
 from flask_assets import Bundle, Environment
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-
 from config import config
 
+
+import pyjade
 
 app = Flask(__name__)
 
@@ -26,7 +25,7 @@ Base.query = db_session.query_property()
 
 bundles = {
     'coffee': Bundle('coffee/*.coffee',
-                     filters='coffeescript',
+                     filters=['jsmin', 'coffeescript'],
                      output='js/packed.js'),
     'less': Bundle('less/*.less',
                    filters='less',
@@ -35,13 +34,11 @@ bundles = {
 
 assets = Environment(app)
 
-
 def create_app():
     app.config.from_object(config[config_name])
     config[config_name].init_app(app)
 
     assets.register(bundles)
-
     app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 
     from .controllers import index_blueprint
